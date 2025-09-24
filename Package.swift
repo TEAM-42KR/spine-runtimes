@@ -64,12 +64,7 @@ let package = Package(
             dependencies: [
               "SpineShadersStructs", "spine-c", "spine_apple_extension"
             ],
-            path: "spine-ios/Sources/SpineSwift",
-            resources: [
-                .process("Resources")
-            ],
-            cSettings: [
-            ]
+            path: "spine-ios/Sources/SpineSwift"
         ),
         .target(
             name: "spine_apple_extension",

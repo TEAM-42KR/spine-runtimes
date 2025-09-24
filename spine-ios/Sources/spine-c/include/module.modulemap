@@ -1,5 +1,6 @@
 module spine_c {
     header "spine-c/spine-c.h"
+    header "spine-cpp-lite.h"
     
     explicit module cpp {
         umbrella header "spine/spine.h"
@@ -10,7 +11,7 @@ module spine_c {
     module block_support {
         header "spine-c/extensions/block_support.h"
         export *
-        requires blocks, objc_arc
+        requires blocks
     }
     
 }

@@ -1,0 +1,17 @@
+module spine_c {
+    header "spine-c/spine-c.h"
+    header "spine-cpp-lite.h"
+    
+    explicit module cpp {
+        umbrella header "spine/spine.h"
+        export *
+        requires cplusplus11
+    }
+    
+    module block_support {
+        header "spine-c/extensions/block_support.h"
+        export *
+        requires blocks
+    }
+    
+}
